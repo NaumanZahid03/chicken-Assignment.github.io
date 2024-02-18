@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Assignment</title>
+</head>
+<body>
+   <center> <h1>WellCome to Chicken Shop</h1></center>
+
+   <script>
+    function calculatePrice(weight) {
+    const pricePerKg = 500; // Price per kg in rupees
+    const totalWeightInKg = weight / 1000; // Convert weight to kg
+    const totalPrice = totalWeightInKg * pricePerKg; // Calculate total price
+    return totalPrice;
+}
+
+function main() {
+    const weight = parseFloat(prompt("We are selling Chicken Per KG 500 Pkr Enter the weight of chicken (in grams):")); // Get weight from user
+    const price = calculatePrice(weight); // Calculate price
+    document.write(`You have to pay ${price.toFixed(0)} rupees for ${weight} grams of chicken.`); // Display result
+}
+main();
+   </script>
+</body>
+</html>
